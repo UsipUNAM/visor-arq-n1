@@ -187,7 +187,7 @@ for (const m of materiales) {
 
 // datos de espacio y objeto de cada malla
 function infoDe(o) {
-  let esp = null, obj = null, p = o;
+  let esp = null, obj = null, fic = null, p = o;
   while (p && p !== raiz) {
     if (p.userData && p.userData.nombre !== undefined && p.userData.m2 !== undefined) { esp = p.userData; break; }
     p = p.parent;
@@ -195,10 +195,11 @@ function infoDe(o) {
   p = o;
   while (p && p.parent && p.parent !== raiz) {
     const padre = p.parent;
+    if (!fic && p.userData && p.userData.ficha) fic = p.userData.ficha;
     if ((padre.userData && padre.userData.m2 !== undefined) || esDueno(padre)) { obj = nombreDe(p); break; }
     p = padre;
   }
-  return { esp, obj: obj || nombreDe(o) };
+  return { esp, obj: obj || nombreDe(o), ficha: fic || (o.userData && o.userData.ficha) || null };
 }
 function duenoDe(o) {
   let p = o.parent;
@@ -401,7 +402,7 @@ function espacioEnPunto(p) {
 const espacioPorExtras = (u) => datos.espacios.find((e) => e.nodo === u.name || (e.nombre === u.nombre && e.nivel === u.nivel)) || null;
 const limpio = (n) => (n || '').replace(/(\.\d{3})+$/, '').replace(/·m$/, '');
 
-function seleccionar(e, objeto) {
+function seleccionar(e, objeto, ficha) {
   seleccion = e;
   if (!e) { $('ficha').hidden = true; marco.visible = false; pide(); return; }
   marco.box.copy(cajaEspacio(e));
@@ -410,7 +411,7 @@ function seleccionar(e, objeto) {
   $('f-zona').textContent = `${e.zona} · Nivel ${e.nivel}`;
   $('f-nombre').textContent = e.nombre;
   $('f-datos').textContent = `${e.m2.toFixed(1)} m²` + (e.dims ? ` · ${e.dims} m` : '');
-  $('f-objeto').textContent = objeto ? `Objeto: ${limpio(objeto)}` : '';
+  $('f-objeto').textContent = objeto ? `Objeto: ${limpio(objeto)}` + (ficha ? ` · ${ficha}` : '') : '';
   pintaNotas();
   pide();
 }
@@ -430,7 +431,7 @@ function elegir(ndc) {
     if (m.transparent && m.opacity < 0.5) continue;
     const info = h.object.isInstancedMesh ? h.object.userData.fuentes[h.instanceId] : infoDe(h.object);
     const e = (info.esp && espacioPorExtras(info.esp)) || espacioEnPunto(h.point);
-    return { e, objeto: info.obj, punto: h.point.clone() };
+    return { e, objeto: info.obj, ficha: info.ficha, punto: h.point.clone() };
   }
   return null;
 }
@@ -438,7 +439,7 @@ function clicEn(x, y) {
   const r = lienzo.getBoundingClientRect();
   const ndc = new THREE.Vector2(((x - r.left) / r.width) * 2 - 1, -((y - r.top) / r.height) * 2 + 1);
   const res = elegir(ndc);
-  if (res && res.e) seleccionar(res.e, res.objeto);
+  if (res && res.e) seleccionar(res.e, res.objeto, res.ficha);
   else if (res) { seleccionar(null); aviso(`${limpio(res.objeto)} · fuera de los espacios del plano`); }
   return res;
 }
@@ -826,6 +827,8 @@ H.api = {
   caminar: () => entrarCaminar(false),
   orbita: salirCaminar,
   mirar: (y, p) => { if (y !== null) yaw = y; pitch = p; persp.rotation.set(pitch, yaw, 0, 'YXZ'); pide(); },
+  ponCamara: (pos, obj, c) => { salirCaminar(); usarCamara(persp); persp.fov = 50; persp.updateProjectionMatrix(); aplicarCorte(c || CORTE_N1);
+    persp.position.fromArray(pos); controls.target.fromArray(obj); controls.update(); pide(); },
   camara: () => ({ pos: cam.position.toArray(), objetivo: controls.target.toArray(), modo: H.modo, orto: cam === orto, yaw, pitch }),
   clicEn,
   irA: (n) => irA(datos.espacios.find((e) => e.nombre.startsWith(n))),

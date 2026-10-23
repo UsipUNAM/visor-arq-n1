@@ -1,8 +1,8 @@
 {
- "fuente": "hermes_v14b.blend",
+ "fuente": "hermes_v17b.blend",
  "fecha": "2026-10-23",
  "px_textura": 2048,
- "mb": 68.3,
+ "mb": 82.5,
  "colecciones": [
   {
    "nombre": "Nivel 1",
@@ -260,13 +260,13 @@
    "nombre": "Antesala de la sala de usos múltiples",
    "zona": "Público",
    "nivel": 1,
-   "m2": 19.1,
-   "dims": "3.75 × 5.10",
+   "m2": 11.1,
+   "dims": "3.75 × 2.95",
    "rect": [
     32.6,
     24.6,
     3.748,
-    5.1
+    2.95
    ],
    "coleccion": "N1 · Público"
   },
@@ -299,6 +299,21 @@
     4.452
    ],
    "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Bodega de la antesala · mobiliario de eventos",
+   "nombre": "Bodega de la antesala · mobiliario de eventos",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 2.1,
+   "dims": "1.05 × 2.00",
+   "rect": [
+    32.6,
+    27.7,
+    1.05,
+    2.0
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
   },
   {
    "nodo": "Bodega de material quirúrgico e insumos",
@@ -374,6 +389,21 @@
     5.652
    ],
    "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Cabina de control audiovisual",
+   "nombre": "Cabina de control audiovisual",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 5.1,
+   "dims": "2.55 × 2.00",
+   "rect": [
+    33.8,
+    27.7,
+    2.548,
+    2.0
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
   },
   {
    "nodo": "Cabina Gesell",
@@ -1021,8 +1051,8 @@
    "coleccion": "N1 · Centrales de enfermería"
   },
   {
-   "nodo": "Control de imagenología",
-   "nombre": "Control de imagenología",
+   "nodo": "Control de hemodinamia",
+   "nombre": "Control de hemodinamia",
    "zona": "Control y observación",
    "nivel": 2,
    "m2": 5.0,
@@ -1561,6 +1591,21 @@
    "coleccion": "N2 · Salas de habilidades"
   },
   {
+   "nodo": "Hemodinamia simulada · simulador endovascular",
+   "nombre": "Hemodinamia simulada · simulador endovascular",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "2.70 × 4.20",
+   "rect": [
+    43.0,
+    25.5,
+    2.7,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
    "nodo": "Hospitalización · adultos",
    "nombre": "Hospitalización · adultos",
    "zona": "Alta fidelidad",
@@ -1616,21 +1661,6 @@
     7.348,
     25.5,
     3.0,
-    4.2
-   ],
-   "coleccion": "N2 · Alta fidelidad"
-  },
-  {
-   "nodo": "Imagenología simulada · TAC",
-   "nombre": "Imagenología simulada · TAC",
-   "zona": "Alta fidelidad",
-   "nivel": 2,
-   "m2": 11.3,
-   "dims": "2.70 × 4.20",
-   "rect": [
-    43.0,
-    25.5,
-    2.7,
     4.2
    ],
    "coleccion": "N2 · Alta fidelidad"
@@ -2050,13 +2080,13 @@
    "nombre": "Sanitarios · hombres",
    "zona": "Núcleo y escaleras",
    "nivel": 1,
-   "m2": 6.7,
-   "dims": "3.55 × 1.90",
+   "m2": 4.8,
+   "dims": "1.85 × 2.60",
    "rect": [
     30.452,
-    18.25,
-    3.548,
-    1.9
+    17.55,
+    1.848,
+    2.6
    ],
    "coleccion": "N1 · Núcleo y escaleras"
   },
@@ -2080,13 +2110,13 @@
    "nombre": "Sanitarios · mujeres",
    "zona": "Núcleo y escaleras",
    "nivel": 1,
-   "m2": 13.0,
-   "dims": "3.55 × 3.65",
+   "m2": 10.5,
+   "dims": "3.55 × 2.95",
    "rect": [
     30.452,
     14.448,
     3.548,
-    3.652
+    2.952
    ],
    "coleccion": "N1 · Núcleo y escaleras"
   },
