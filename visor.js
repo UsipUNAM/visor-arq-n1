@@ -743,7 +743,7 @@ $('archivo-notas').addEventListener('change', async (ev) => {
   aviso(`${k} observaci${k === 1 ? "ón cargada" : "ones cargadas"} de ${f.name}`);
   ev.target.value = '';
 });
-fetch('notas_auditoria.md', { cache: 'no-store' }).then((r) => (r.status === 200 ? r.text() : '')).then((t) => { if (t) mezcla(desdeMarkdown(t)); }).catch(() => {});
+if (/^(localhost|127.0.0.1)$/.test(location.hostname)) fetch('notas_auditoria.md', { cache: 'no-store' }).then((r) => (r.status === 200 ? r.text() : '')).then((t) => { if (t) mezcla(desdeMarkdown(t)); }).catch(() => {});
 cuenta();
 
 let tAviso;
