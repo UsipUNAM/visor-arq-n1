@@ -1,0 +1,2405 @@
+{
+ "fuente": "hermes_v14.blend",
+ "fecha": "2026-10-23",
+ "px_textura": 1024,
+ "mb": 22.6,
+ "colecciones": [
+  {
+   "nombre": "Nivel 1",
+   "hijos": [
+    {
+     "nombre": "N1 · Estructura",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Plafones",
+     "hijos": [
+      {
+       "nombre": "N1 · Macro · techo 4 mesas",
+       "hijos": []
+      }
+     ]
+    },
+    {
+     "nombre": "N1 · Puertas",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Bloque quirúrgico",
+     "hijos": [
+      {
+       "nombre": "N1 · Macro · 4 mesas por sala",
+       "hijos": []
+      },
+      {
+       "nombre": "N1 · Macro · opción 5 mesas por sala",
+       "hijos": []
+      },
+      {
+       "nombre": "N1 · Macro · muro móvil abierto",
+       "hijos": []
+      },
+      {
+       "nombre": "N1 · Macro · muro móvil cerrado",
+       "hijos": []
+      }
+     ]
+    },
+    {
+     "nombre": "N1 · Debriefing",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Público",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Urgencias",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Control y observación",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Centrales de enfermería",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Servicios y bodegas",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Cadena de modelos biológicos",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Núcleo y escaleras",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Área negra · vestidores",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Circulaciones",
+     "hijos": []
+    },
+    {
+     "nombre": "N1 · Señalización de emergencia",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "nombre": "Nivel 2",
+   "hijos": [
+    {
+     "nombre": "N2 · Estructura",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Plafones",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Puertas",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Alta fidelidad",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Control y observación",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Debriefing",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Centrales de enfermería",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Consultorios OSCE",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Circulación Gesell",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Académico y oficinas",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Área gris y transferencia",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Servicios y bodegas",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Salas de habilidades",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Núcleo y escaleras",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Realidad virtual",
+     "hijos": []
+    }
+   ]
+  },
+  {
+   "nombre": "Azotea",
+   "hijos": []
+  },
+  {
+   "nombre": "Exterior",
+   "hijos": []
+  }
+ ],
+ "zonas": {
+  "Bloque quirúrgico": {
+   "fill": "#D6E7E3",
+   "stroke": "#2E6B62"
+  },
+  "Cadena de modelos biológicos": {
+   "fill": "#D8E3EF",
+   "stroke": "#3A5A80"
+  },
+  "Área gris y transferencia": {
+   "fill": "#E2E5E9",
+   "stroke": "#6B7480"
+  },
+  "Área negra · vestidores": {
+   "fill": "#DDDFE2",
+   "stroke": "#4A4F57"
+  },
+  "Urgencias": {
+   "fill": "#F4E2CE",
+   "stroke": "#A9611F"
+  },
+  "Alta fidelidad": {
+   "fill": "#DCE6F5",
+   "stroke": "#2F5FA8"
+  },
+  "Consultorios OSCE": {
+   "fill": "#E6DDF1",
+   "stroke": "#6B4A8F"
+  },
+  "Circulación Gesell": {
+   "fill": "#D6CFDE",
+   "stroke": "#3D3145"
+  },
+  "Control y observación": {
+   "fill": "#CFD5DC",
+   "stroke": "#37414D"
+  },
+  "Debriefing": {
+   "fill": "#EFE6CE",
+   "stroke": "#8A6D2F"
+  },
+  "Salas de habilidades": {
+   "fill": "#DBEBDF",
+   "stroke": "#3E7A4E"
+  },
+  "Realidad virtual": {
+   "fill": "#D3E8EA",
+   "stroke": "#1F6F7A"
+  },
+  "Académico y oficinas": {
+   "fill": "#E0E4E9",
+   "stroke": "#556070"
+  },
+  "Público": {
+   "fill": "#F0E3D6",
+   "stroke": "#8C5B34"
+  },
+  "Servicios y bodegas": {
+   "fill": "#E4E6E8",
+   "stroke": "#5C6169"
+  },
+  "Centrales de enfermería": {
+   "fill": "#F2DCE3",
+   "stroke": "#8A2F4A"
+  },
+  "Núcleo y escaleras": {
+   "fill": "#C8CCD1",
+   "stroke": "#242A31"
+  }
+ },
+ "espacios": [
+  {
+   "nodo": "Andén de recepción de modelos",
+   "nombre": "Andén de recepción de modelos",
+   "zona": "Cadena de modelos biológicos",
+   "nivel": 1,
+   "m2": 18.9,
+   "dims": "4.20 × 4.50",
+   "rect": [
+    0.3,
+    0.3,
+    4.2,
+    4.5
+   ],
+   "coleccion": "N1 · Cadena de modelos biológicos"
+  },
+  {
+   "nodo": "Antesala de la sala de usos múltiples",
+   "nombre": "Antesala de la sala de usos múltiples",
+   "zona": "Público",
+   "nivel": 1,
+   "m2": 19.1,
+   "dims": "3.75 × 5.10",
+   "rect": [
+    32.6,
+    24.6,
+    3.748,
+    5.1
+   ],
+   "coleccion": "N1 · Público"
+  },
+  {
+   "nodo": "Archivo y consumibles",
+   "nombre": "Archivo y consumibles",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 6.5,
+   "dims": "2.40 × 2.70",
+   "rect": [
+    26.3,
+    27.0,
+    2.4,
+    2.7
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Atención al politraumatizado y recepción de ambulancia",
+   "nombre": "Atención al politraumatizado y recepción de ambulancia",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "m2": 28.3,
+   "dims": "6.35 × 4.45",
+   "rect": [
+    43.352,
+    0.3,
+    6.348,
+    4.452
+   ],
+   "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Bodega de material quirúrgico e insumos",
+   "nombre": "Bodega de material quirúrgico e insumos",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "m2": 39.8,
+   "dims": "8.85 × 4.50",
+   "rect": [
+    12.5,
+    0.3,
+    8.848,
+    4.5
+   ],
+   "coleccion": "N1 · Bloque quirúrgico"
+  },
+  {
+   "nodo": "Bodega de simulación háptica",
+   "nombre": "Bodega de simulación háptica",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 11.1,
+   "dims": "4.05 × 2.75",
+   "rect": [
+    45.652,
+    10.2,
+    4.048,
+    2.748
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Bodega de simuladores",
+   "nombre": "Bodega de simuladores",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 28.4,
+   "dims": "5.80 × 4.90",
+   "rect": [
+    28.2,
+    0.3,
+    5.8,
+    4.9
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Bodega de UCI",
+   "nombre": "Bodega de UCI",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 5.1,
+   "dims": "2.50 × 2.05",
+   "rect": [
+    47.2,
+    27.648,
+    2.5,
+    2.048
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Bodega y carga de cascos",
+   "nombre": "Bodega y carga de cascos",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 9.6,
+   "dims": "1.70 × 5.65",
+   "rect": [
+    29.548,
+    8.652,
+    1.7,
+    5.652
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Cabina Gesell",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 1,
+   "m2": 6.7,
+   "dims": "1.60 × 4.20",
+   "rect": [
+    39.6,
+    14.352,
+    1.6,
+    4.2
+   ],
+   "coleccion": "N1 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.001",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 1,
+   "m2": 6.7,
+   "dims": "1.60 × 4.20",
+   "rect": [
+    44.6,
+    14.352,
+    1.6,
+    4.2
+   ],
+   "coleccion": "N1 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.002",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 1,
+   "m2": 6.7,
+   "dims": "1.60 × 4.20",
+   "rect": [
+    39.6,
+    4.9,
+    1.6,
+    4.2
+   ],
+   "coleccion": "N1 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.003",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 1,
+   "m2": 6.7,
+   "dims": "1.60 × 4.20",
+   "rect": [
+    44.6,
+    4.9,
+    1.6,
+    4.2
+   ],
+   "coleccion": "N1 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.004",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.2,
+   "dims": "1.25 × 4.20",
+   "rect": [
+    3.452,
+    25.5,
+    1.252,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.005",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.2,
+   "dims": "1.25 × 4.20",
+   "rect": [
+    10.5,
+    25.5,
+    1.252,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.006",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.2,
+   "dims": "1.25 × 4.20",
+   "rect": [
+    3.452,
+    18.252,
+    1.252,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.007",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    0.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.008",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    3.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.009",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    6.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.010",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    9.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.011",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    12.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.012",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    15.3,
+    9.348,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.013",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.3,
+   "dims": "3.05 × 1.40",
+   "rect": [
+    18.3,
+    9.348,
+    3.048,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.014",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    0.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.015",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    3.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.016",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    6.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.017",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    9.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.018",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    12.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.019",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.0,
+   "dims": "2.85 × 1.40",
+   "rect": [
+    15.3,
+    6.748,
+    2.848,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.020",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 4.3,
+   "dims": "3.05 × 1.40",
+   "rect": [
+    18.3,
+    6.748,
+    3.048,
+    1.4
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Cabina Gesell.021",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.0,
+   "dims": "1.20 × 4.20",
+   "rect": [
+    39.2,
+    25.5,
+    1.2,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.022",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.0,
+   "dims": "1.20 × 4.20",
+   "rect": [
+    39.2,
+    18.0,
+    1.2,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.023",
+   "nombre": "Cabina Gesell",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.0,
+   "dims": "1.20 × 4.20",
+   "rect": [
+    45.848,
+    18.0,
+    1.2,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Cabina Gesell.024",
+   "nombre": "Cabina Gesell",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "m2": 5.2,
+   "dims": "1.25 × 4.20",
+   "rect": [
+    17.552,
+    25.5,
+    1.252,
+    4.2
+   ],
+   "coleccion": "N2 · Circulación Gesell"
+  },
+  {
+   "nodo": "Central de enfermería UCI · bahía",
+   "nombre": "Central de enfermería UCI · bahía",
+   "zona": "Centrales de enfermería",
+   "nivel": 2,
+   "m2": 4.3,
+   "dims": "3.60 × 1.20",
+   "rect": [
+    42.748,
+    24.148,
+    3.6,
+    1.2
+   ],
+   "coleccion": "N2 · Centrales de enfermería"
+  },
+  {
+   "nodo": "Central de enfermería · bahía",
+   "nombre": "Central de enfermería · bahía",
+   "zona": "Centrales de enfermería",
+   "nivel": 2,
+   "m2": 4.8,
+   "dims": "4.00 × 1.20",
+   "rect": [
+    8.952,
+    24.148,
+    4.0,
+    1.2
+   ],
+   "coleccion": "N2 · Centrales de enfermería"
+  },
+  {
+   "nodo": "CEYE · zona roja y zona azul",
+   "nombre": "CEYE · zona roja y zona azul",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "m2": 12.7,
+   "dims": "4.30 × 2.95",
+   "rect": [
+    23.748,
+    8.652,
+    4.3,
+    2.952
+   ],
+   "coleccion": "N1 · Bloque quirúrgico"
+  },
+  {
+   "nodo": "Consultorio OSCE 1",
+   "nombre": "Consultorio OSCE 1",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    0.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 10",
+   "nombre": "Consultorio OSCE 10",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    6.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 11",
+   "nombre": "Consultorio OSCE 11",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    9.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 12",
+   "nombre": "Consultorio OSCE 12",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    12.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 13",
+   "nombre": "Consultorio OSCE 13",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    15.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 14",
+   "nombre": "Consultorio OSCE 14",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 15.6,
+   "dims": "3.05 × 5.10",
+   "rect": [
+    18.3,
+    1.5,
+    3.048,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 2",
+   "nombre": "Consultorio OSCE 2",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    3.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 3",
+   "nombre": "Consultorio OSCE 3",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    6.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 4",
+   "nombre": "Consultorio OSCE 4",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    9.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 5",
+   "nombre": "Consultorio OSCE 5",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    12.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 6",
+   "nombre": "Consultorio OSCE 6",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    15.3,
+    10.9,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 7",
+   "nombre": "Consultorio OSCE 7",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 15.6,
+   "dims": "3.05 × 5.10",
+   "rect": [
+    18.3,
+    10.9,
+    3.048,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 8",
+   "nombre": "Consultorio OSCE 8",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    0.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Consultorio OSCE 9",
+   "nombre": "Consultorio OSCE 9",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "m2": 14.5,
+   "dims": "2.85 × 5.10",
+   "rect": [
+    3.3,
+    1.5,
+    2.848,
+    5.1
+   ],
+   "coleccion": "N2 · Consultorios OSCE"
+  },
+  {
+   "nodo": "Control de enfermería de urgencias",
+   "nombre": "Control de enfermería de urgencias",
+   "zona": "Centrales de enfermería",
+   "nivel": 1,
+   "m2": 14.1,
+   "dims": "3.35 × 4.20",
+   "rect": [
+    46.348,
+    14.352,
+    3.348,
+    4.2
+   ],
+   "coleccion": "N1 · Centrales de enfermería"
+  },
+  {
+   "nodo": "Control de imagenología",
+   "nombre": "Control de imagenología",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 5.0,
+   "dims": "1.20 × 4.20",
+   "rect": [
+    45.848,
+    25.5,
+    1.2,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Control y debriefing de trauma",
+   "nombre": "Control y debriefing de trauma",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 14.2,
+   "dims": "3.20 × 4.45",
+   "rect": [
+    40.0,
+    0.3,
+    3.2,
+    4.452
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Coordinación del examen OSCE",
+   "nombre": "Coordinación del examen OSCE",
+   "zona": "Control y observación",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "2.35 × 4.20",
+   "rect": [
+    11.948,
+    18.252,
+    2.352,
+    4.2
+   ],
+   "coleccion": "N2 · Control y observación"
+  },
+  {
+   "nodo": "Coordinación y administración · oficina compartida",
+   "nombre": "Coordinación y administración · oficina compartida",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "m2": 12.6,
+   "dims": "2.40 × 5.25",
+   "rect": [
+    23.748,
+    24.452,
+    2.4,
+    5.252
+   ],
+   "coleccion": "N2 · Académico y oficinas"
+  },
+  {
+   "nodo": "Cuarto de medicamentos simulado · hospitalización",
+   "nombre": "Cuarto de medicamentos simulado · hospitalización",
+   "zona": "Centrales de enfermería",
+   "nivel": 2,
+   "m2": 5.3,
+   "dims": "4.45 × 1.20",
+   "rect": [
+    14.4,
+    24.148,
+    4.452,
+    1.2
+   ],
+   "coleccion": "N2 · Centrales de enfermería"
+  },
+  {
+   "nodo": "Cuarto de medicamentos simulado · UCI",
+   "nombre": "Cuarto de medicamentos simulado · UCI",
+   "zona": "Centrales de enfermería",
+   "nivel": 2,
+   "m2": 5.0,
+   "dims": "2.50 × 2.00",
+   "rect": [
+    47.2,
+    25.5,
+    2.5,
+    2.0
+   ],
+   "coleccion": "N2 · Centrales de enfermería"
+  },
+  {
+   "nodo": "Debriefing de quirófano y cirugía robótica",
+   "nombre": "Debriefing de quirófano y cirugía robótica",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 26.1,
+   "dims": "10.25 × 2.55",
+   "rect": [
+    23.748,
+    11.748,
+    10.252,
+    2.548
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing de sala de urgencias · Triage",
+   "nombre": "Debriefing de sala de urgencias · Triage",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 9.9,
+   "dims": "3.30 × 3.00",
+   "rect": [
+    46.4,
+    11.2,
+    3.3,
+    3.0
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing de simulación háptica",
+   "nombre": "Debriefing de simulación háptica",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "4.05 × 2.80",
+   "rect": [
+    45.652,
+    13.1,
+    4.048,
+    2.8
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing de urgencias adultos",
+   "nombre": "Debriefing de urgencias adultos",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 9.6,
+   "dims": "3.20 × 3.00",
+   "rect": [
+    39.7,
+    11.2,
+    3.2,
+    3.0
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing de urgencias ginecológicas",
+   "nombre": "Debriefing de urgencias ginecológicas",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 9.6,
+   "dims": "3.20 × 3.00",
+   "rect": [
+    36.352,
+    11.2,
+    3.2,
+    3.0
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing de urgencias pediátricas",
+   "nombre": "Debriefing de urgencias pediátricas",
+   "zona": "Debriefing",
+   "nivel": 1,
+   "m2": 9.6,
+   "dims": "3.20 × 3.00",
+   "rect": [
+    43.052,
+    11.2,
+    3.2,
+    3.0
+   ],
+   "coleccion": "N1 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · adultos",
+   "nombre": "Debriefing · adultos",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 10.1,
+   "dims": "2.40 × 4.20",
+   "rect": [
+    18.948,
+    25.5,
+    2.4,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · ginecoobstetricia",
+   "nombre": "Debriefing · ginecoobstetricia",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "2.35 × 4.20",
+   "rect": [
+    4.852,
+    18.252,
+    2.352,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · pediatría 1",
+   "nombre": "Debriefing · pediatría 1",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "2.35 × 4.20",
+   "rect": [
+    4.852,
+    25.5,
+    2.352,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · pediatría 2",
+   "nombre": "Debriefing · pediatría 2",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "2.35 × 4.20",
+   "rect": [
+    11.9,
+    25.5,
+    2.352,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · UCI adultos",
+   "nombre": "Debriefing · UCI adultos",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 9.7,
+   "dims": "2.30 × 4.20",
+   "rect": [
+    40.548,
+    25.5,
+    2.3,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · UCI pediátrica 1",
+   "nombre": "Debriefing · UCI pediátrica 1",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 9.7,
+   "dims": "2.30 × 4.20",
+   "rect": [
+    40.548,
+    18.0,
+    2.3,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Debriefing · UCI pediátrica 2",
+   "nombre": "Debriefing · UCI pediátrica 2",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 10.5,
+   "dims": "2.50 × 4.20",
+   "rect": [
+    47.2,
+    18.0,
+    2.5,
+    4.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Ductos y cuarto eléctrico",
+   "nombre": "Ductos y cuarto eléctrico",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 3.5,
+   "dims": "3.20 × 1.10",
+   "rect": [
+    23.748,
+    16.598,
+    3.2,
+    1.102
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Ductos y cuarto eléctrico.001",
+   "nombre": "Ductos y cuarto eléctrico",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 3.5,
+   "dims": "3.20 × 1.10",
+   "rect": [
+    23.748,
+    16.598,
+    3.2,
+    1.102
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Elevador",
+   "nombre": "Elevador",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 8.2,
+   "dims": "3.20 × 2.55",
+   "rect": [
+    27.1,
+    14.448,
+    3.2,
+    2.552
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Elevador.001",
+   "nombre": "Elevador",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 8.2,
+   "dims": "3.20 × 2.55",
+   "rect": [
+    27.1,
+    14.448,
+    3.2,
+    2.552
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Escalera de emergencia",
+   "nombre": "Escalera de emergencia",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 15.6,
+   "dims": "3.50 × 4.45",
+   "rect": [
+    36.352,
+    0.3,
+    3.5,
+    4.452
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Escalera de emergencia.001",
+   "nombre": "Escalera de emergencia",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 15.6,
+   "dims": "3.50 × 4.45",
+   "rect": [
+    36.352,
+    0.3,
+    3.5,
+    4.452
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Escalera principal",
+   "nombre": "Escalera principal",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 14.4,
+   "dims": "3.20 × 4.50",
+   "rect": [
+    23.748,
+    17.852,
+    3.2,
+    4.5
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Escalera principal.001",
+   "nombre": "Escalera principal",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 14.4,
+   "dims": "3.20 × 4.50",
+   "rect": [
+    23.748,
+    17.852,
+    3.2,
+    4.5
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Esclusa de acceso a UCI",
+   "nombre": "Esclusa de acceso a UCI",
+   "zona": "Área gris y transferencia",
+   "nivel": 2,
+   "m2": 7.5,
+   "dims": "2.50 × 3.00",
+   "rect": [
+    36.352,
+    22.352,
+    2.5,
+    3.0
+   ],
+   "coleccion": "N2 · Área gris y transferencia"
+  },
+  {
+   "nodo": "Habilidades 1 · baja fidelidad",
+   "nombre": "Habilidades 1 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "3.20 × 3.10",
+   "rect": [
+    36.352,
+    5.0,
+    3.2,
+    3.1
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 2 · baja fidelidad",
+   "nombre": "Habilidades 2 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "3.20 × 3.10",
+   "rect": [
+    39.7,
+    5.0,
+    3.2,
+    3.1
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 3 · baja fidelidad",
+   "nombre": "Habilidades 3 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "3.20 × 3.10",
+   "rect": [
+    43.052,
+    5.0,
+    3.2,
+    3.1
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 4 · baja fidelidad",
+   "nombre": "Habilidades 4 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 10.2,
+   "dims": "3.30 × 3.10",
+   "rect": [
+    46.4,
+    5.0,
+    3.3,
+    3.1
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 5 · baja fidelidad",
+   "nombre": "Habilidades 5 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "3.10 × 3.20",
+   "rect": [
+    40.0,
+    0.3,
+    3.1,
+    3.2
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 6 · baja fidelidad",
+   "nombre": "Habilidades 6 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "3.10 × 3.20",
+   "rect": [
+    43.252,
+    0.3,
+    3.1,
+    3.2
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 7 · baja fidelidad",
+   "nombre": "Habilidades 7 · baja fidelidad",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 10.2,
+   "dims": "3.20 × 3.20",
+   "rect": [
+    46.5,
+    0.3,
+    3.2,
+    3.2
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Habilidades 8 · sala grande de fidelidad intermedia",
+   "nombre": "Habilidades 8 · sala grande de fidelidad intermedia",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "m2": 27.0,
+   "dims": "5.15 × 5.25",
+   "rect": [
+    28.852,
+    24.452,
+    5.152,
+    5.252
+   ],
+   "coleccion": "N2 · Salas de habilidades"
+  },
+  {
+   "nodo": "Hospitalización · adultos",
+   "nombre": "Hospitalización · adultos",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 12.6,
+   "dims": "3.00 × 4.20",
+   "rect": [
+    14.4,
+    25.5,
+    3.0,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Hospitalización · ginecoobstetricia",
+   "nombre": "Hospitalización · ginecoobstetricia",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 12.6,
+   "dims": "3.00 × 4.20",
+   "rect": [
+    0.3,
+    18.252,
+    3.0,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Hospitalización · pediatría 1",
+   "nombre": "Hospitalización · pediatría 1",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 12.6,
+   "dims": "3.00 × 4.20",
+   "rect": [
+    0.3,
+    25.5,
+    3.0,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Hospitalización · pediatría 2",
+   "nombre": "Hospitalización · pediatría 2",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 12.6,
+   "dims": "3.00 × 4.20",
+   "rect": [
+    7.348,
+    25.5,
+    3.0,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Imagenología simulada · TAC",
+   "nombre": "Imagenología simulada · TAC",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "2.70 × 4.20",
+   "rect": [
+    43.0,
+    25.5,
+    2.7,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Lactario",
+   "nombre": "Lactario",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "m2": 5.8,
+   "dims": "2.40 × 2.40",
+   "rect": [
+    26.3,
+    24.452,
+    2.4,
+    2.4
+   ],
+   "coleccion": "N2 · Académico y oficinas"
+  },
+  {
+   "nodo": "Lobby, recepción y vigilancia",
+   "nombre": "Lobby, recepción y vigilancia",
+   "zona": "Público",
+   "nivel": 1,
+   "m2": 28.1,
+   "dims": "5.35 × 5.25",
+   "rect": [
+    27.1,
+    24.452,
+    5.348,
+    5.252
+   ],
+   "coleccion": "N1 · Público"
+  },
+  {
+   "nodo": "Macro quirófano · 8 mesas · h libre 3.60 m",
+   "nombre": "Macro quirófano · 8 mesas · h libre 3.60 m",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "m2": 169.2,
+   "dims": "16.35 × 10.35",
+   "rect": [
+    5.0,
+    4.952,
+    16.352,
+    10.348
+   ],
+   "coleccion": "N1 · Bloque quirúrgico"
+  },
+  {
+   "nodo": "Montacargas",
+   "nombre": "Montacargas",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 6.4,
+   "dims": "3.20 × 2.00",
+   "rect": [
+    23.748,
+    14.448,
+    3.2,
+    2.0
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Montacargas.001",
+   "nombre": "Montacargas",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 6.4,
+   "dims": "3.20 × 2.00",
+   "rect": [
+    23.748,
+    14.448,
+    3.2,
+    2.0
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Moulage y preparación de escenarios",
+   "nombre": "Moulage y preparación de escenarios",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 9.9,
+   "dims": "2.35 × 4.20",
+   "rect": [
+    14.448,
+    18.252,
+    2.352,
+    4.2
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Multioficinas y cubículos · 12 puestos compartidos",
+   "nombre": "Multioficinas y cubículos · 12 puestos compartidos",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "m2": 35.3,
+   "dims": "4.30 × 8.20",
+   "rect": [
+    23.748,
+    0.3,
+    4.3,
+    8.2
+   ],
+   "coleccion": "N2 · Académico y oficinas"
+  },
+  {
+   "nodo": "Nivel 1",
+   "nombre": "Nivel 1",
+   "zona": "",
+   "nivel": 1,
+   "m2": 0.0,
+   "dims": "",
+   "rect": null,
+   "coleccion": "Nivel 1"
+  },
+  {
+   "nodo": "Nivel 2",
+   "nombre": "Nivel 2",
+   "zona": "",
+   "nivel": 1,
+   "m2": 0.0,
+   "dims": "",
+   "rect": null,
+   "coleccion": "Nivel 2"
+  },
+  {
+   "nodo": "Pasillo de camillas y bodega",
+   "nombre": "Pasillo de camillas y bodega",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 14.1,
+   "dims": "3.35 × 4.20",
+   "rect": [
+    46.348,
+    4.9,
+    3.348,
+    4.2
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Preparación de cadáveres · auxiliar forense · congelador 30 ft³",
+   "nombre": "Preparación de cadáveres · auxiliar forense · congelador 30 ft³",
+   "zona": "Cadena de modelos biológicos",
+   "nivel": 1,
+   "m2": 14.8,
+   "dims": "3.30 × 4.50",
+   "rect": [
+    4.648,
+    0.3,
+    3.3,
+    4.5
+   ],
+   "coleccion": "N1 · Cadena de modelos biológicos"
+  },
+  {
+   "nodo": "Realidad virtual inmersiva · 3 estaciones",
+   "nombre": "Realidad virtual inmersiva · 3 estaciones",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 31.9,
+   "dims": "5.65 × 5.65",
+   "rect": [
+    23.748,
+    8.652,
+    5.652,
+    5.652
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Recepción e inducción anestésica de cerdos",
+   "nombre": "Recepción e inducción anestésica de cerdos",
+   "zona": "Cadena de modelos biológicos",
+   "nivel": 1,
+   "m2": 8.3,
+   "dims": "1.85 × 4.50",
+   "rect": [
+    8.1,
+    0.3,
+    1.852,
+    4.5
+   ],
+   "coleccion": "N1 · Cadena de modelos biológicos"
+  },
+  {
+   "nodo": "Ropería, séptico e intendencia",
+   "nombre": "Ropería, séptico e intendencia",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.60 × 2.30",
+   "rect": [
+    31.4,
+    12.0,
+    2.6,
+    2.3
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "RPBI y residuos biológicos",
+   "nombre": "RPBI y residuos biológicos",
+   "zona": "Cadena de modelos biológicos",
+   "nivel": 1,
+   "m2": 10.1,
+   "dims": "2.25 × 4.50",
+   "rect": [
+    10.1,
+    0.3,
+    2.252,
+    4.5
+   ],
+   "coleccion": "N1 · Cadena de modelos biológicos"
+  },
+  {
+   "nodo": "Sala de café",
+   "nombre": "Sala de café",
+   "zona": "Público",
+   "nivel": 1,
+   "m2": 71.9,
+   "dims": "13.70 × 5.25",
+   "rect": [
+    9.7,
+    24.452,
+    13.7,
+    5.252
+   ],
+   "coleccion": "N1 · Público"
+  },
+  {
+   "nodo": "Sala de cirugía robótica",
+   "nombre": "Sala de cirugía robótica",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "m2": 47.1,
+   "dims": "4.55 × 10.35",
+   "rect": [
+    0.3,
+    4.952,
+    4.548,
+    10.348
+   ],
+   "coleccion": "N1 · Bloque quirúrgico"
+  },
+  {
+   "nodo": "Sala de debriefing OSCE",
+   "nombre": "Sala de debriefing OSCE",
+   "zona": "Debriefing",
+   "nivel": 2,
+   "m2": 8.3,
+   "dims": "2.60 × 3.20",
+   "rect": [
+    31.4,
+    8.652,
+    2.6,
+    3.2
+   ],
+   "coleccion": "N2 · Debriefing"
+  },
+  {
+   "nodo": "Sala de espera y aislamiento OSCE",
+   "nombre": "Sala de espera y aislamiento OSCE",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "m2": 18.7,
+   "dims": "4.45 × 4.20",
+   "rect": [
+    7.348,
+    18.252,
+    4.452,
+    4.2
+   ],
+   "coleccion": "N2 · Académico y oficinas"
+  },
+  {
+   "nodo": "Sala de microcirugía · 16 estaciones",
+   "nombre": "Sala de microcirugía · 16 estaciones",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "m2": 84.0,
+   "dims": "10.25 × 8.20",
+   "rect": [
+    23.748,
+    0.3,
+    10.252,
+    8.2
+   ],
+   "coleccion": "N1 · Bloque quirúrgico"
+  },
+  {
+   "nodo": "Sala de máquinas y gases medicinales",
+   "nombre": "Sala de máquinas y gases medicinales",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 34.1,
+   "dims": "6.50 × 5.25",
+   "rect": [
+    0.3,
+    24.452,
+    6.5,
+    5.252
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Sala de pacientes estandarizados · vestidor y estar",
+   "nombre": "Sala de pacientes estandarizados · vestidor y estar",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "m2": 18.5,
+   "dims": "4.40 × 4.20",
+   "rect": [
+    16.948,
+    18.252,
+    4.4,
+    4.2
+   ],
+   "coleccion": "N2 · Académico y oficinas"
+  },
+  {
+   "nodo": "Sala de urgencias · Triage",
+   "nombre": "Sala de urgencias · Triage",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "m2": 13.0,
+   "dims": "3.10 × 4.20",
+   "rect": [
+    41.352,
+    4.9,
+    3.1,
+    4.2
+   ],
+   "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Sala de usos múltiples · 80-100 asistentes · h libre 4.00 m",
+   "nombre": "Sala de usos múltiples · 80-100 asistentes · h libre 4.00 m",
+   "zona": "Público",
+   "nivel": 1,
+   "m2": 150.1,
+   "dims": "13.35 × 9.05 + 5.75 × 5.10",
+   "rect": [
+    36.352,
+    20.652,
+    13.352,
+    9.052
+   ],
+   "coleccion": "N1 · Público"
+  },
+  {
+   "nodo": "Sanitario neutro",
+   "nombre": "Sanitario neutro",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 7.3,
+   "dims": "3.55 × 2.05",
+   "rect": [
+    30.452,
+    20.3,
+    3.548,
+    2.052
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Sanitario neutro.001",
+   "nombre": "Sanitario neutro",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 7.3,
+   "dims": "3.55 × 2.05",
+   "rect": [
+    30.452,
+    20.3,
+    3.548,
+    2.052
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Sanitarios de quirófano · hombres",
+   "nombre": "Sanitarios de quirófano · hombres",
+   "zona": "Área negra · vestidores",
+   "nivel": 1,
+   "m2": 14.4,
+   "dims": "3.30 × 4.35",
+   "rect": [
+    7.448,
+    18.0,
+    3.3,
+    4.348
+   ],
+   "coleccion": "N1 · Área negra · vestidores"
+  },
+  {
+   "nodo": "Sanitarios de quirófano · mujeres",
+   "nombre": "Sanitarios de quirófano · mujeres",
+   "zona": "Área negra · vestidores",
+   "nivel": 1,
+   "m2": 14.4,
+   "dims": "3.30 × 4.35",
+   "rect": [
+    10.9,
+    18.0,
+    3.3,
+    4.348
+   ],
+   "coleccion": "N1 · Área negra · vestidores"
+  },
+  {
+   "nodo": "Sanitarios · hombres",
+   "nombre": "Sanitarios · hombres",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 6.7,
+   "dims": "3.55 × 1.90",
+   "rect": [
+    30.452,
+    18.25,
+    3.548,
+    1.9
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Sanitarios · hombres.001",
+   "nombre": "Sanitarios · hombres",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 6.7,
+   "dims": "3.55 × 1.90",
+   "rect": [
+    30.452,
+    18.25,
+    3.548,
+    1.9
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Sanitarios · mujeres",
+   "nombre": "Sanitarios · mujeres",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 13.0,
+   "dims": "3.55 × 3.65",
+   "rect": [
+    30.452,
+    14.448,
+    3.548,
+    3.652
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Sanitarios · mujeres.001",
+   "nombre": "Sanitarios · mujeres",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 13.0,
+   "dims": "3.55 × 3.65",
+   "rect": [
+    30.452,
+    14.448,
+    3.548,
+    3.652
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Simulación háptica 1",
+   "nombre": "Simulación háptica 1",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    36.352,
+    13.8,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Simulación háptica 2",
+   "nombre": "Simulación háptica 2",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    39.5,
+    13.8,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Simulación háptica 3",
+   "nombre": "Simulación háptica 3",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    42.648,
+    13.8,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Simulación háptica 4",
+   "nombre": "Simulación háptica 4",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    36.352,
+    10.2,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Simulación háptica 5",
+   "nombre": "Simulación háptica 5",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    39.5,
+    10.2,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Simulación háptica 6",
+   "nombre": "Simulación háptica 6",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "m2": 6.0,
+   "dims": "2.85 × 2.10",
+   "rect": [
+    42.648,
+    10.2,
+    2.848,
+    2.1
+   ],
+   "coleccion": "N2 · Realidad virtual"
+  },
+  {
+   "nodo": "Site y comunicaciones · control de video",
+   "nombre": "Site y comunicaciones · control de video",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 17.1,
+   "dims": "5.80 × 2.95",
+   "rect": [
+    28.2,
+    8.652,
+    5.8,
+    2.952
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Séptico · limpieza e intendencia",
+   "nombre": "Séptico · limpieza e intendencia",
+   "zona": "Servicios y bodegas",
+   "nivel": 1,
+   "m2": 13.7,
+   "dims": "2.60 × 5.25",
+   "rect": [
+    6.948,
+    24.452,
+    2.6,
+    5.252
+   ],
+   "coleccion": "N1 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Taller de ingeniería biomédica · mantenimiento de simuladores",
+   "nombre": "Taller de ingeniería biomédica · mantenimiento de simuladores",
+   "zona": "Servicios y bodegas",
+   "nivel": 2,
+   "m2": 18.3,
+   "dims": "5.80 × 3.15",
+   "rect": [
+    28.2,
+    5.352,
+    5.8,
+    3.152
+   ],
+   "coleccion": "N2 · Servicios y bodegas"
+  },
+  {
+   "nodo": "Tienda y cafetería",
+   "nombre": "Tienda y cafetería",
+   "zona": "Público",
+   "nivel": 1,
+   "m2": 17.8,
+   "dims": "3.40 × 5.25",
+   "rect": [
+    23.548,
+    24.452,
+    3.4,
+    5.252
+   ],
+   "coleccion": "N1 · Público"
+  },
+  {
+   "nodo": "UCI adultos",
+   "nombre": "UCI adultos",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "2.70 × 4.20",
+   "rect": [
+    36.352,
+    25.5,
+    2.7,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "UCI pediátrica 1",
+   "nombre": "UCI pediátrica 1",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "2.70 × 4.20",
+   "rect": [
+    36.352,
+    18.0,
+    2.7,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "UCI pediátrica 2",
+   "nombre": "UCI pediátrica 2",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "m2": 11.3,
+   "dims": "2.70 × 4.20",
+   "rect": [
+    43.0,
+    18.0,
+    2.7,
+    4.2
+   ],
+   "coleccion": "N2 · Alta fidelidad"
+  },
+  {
+   "nodo": "Urgencias adultos",
+   "nombre": "Urgencias adultos",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "m2": 13.0,
+   "dims": "3.10 × 4.20",
+   "rect": [
+    36.352,
+    14.352,
+    3.1,
+    4.2
+   ],
+   "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Urgencias ginecológicas",
+   "nombre": "Urgencias ginecológicas",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "m2": 13.0,
+   "dims": "3.10 × 4.20",
+   "rect": [
+    36.352,
+    4.9,
+    3.1,
+    4.2
+   ],
+   "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Urgencias pediátricas",
+   "nombre": "Urgencias pediátricas",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "m2": 13.0,
+   "dims": "3.10 × 4.20",
+   "rect": [
+    41.352,
+    14.352,
+    3.1,
+    4.2
+   ],
+   "coleccion": "N1 · Urgencias"
+  },
+  {
+   "nodo": "Vestidor de quirófano · hombres · lockers",
+   "nombre": "Vestidor de quirófano · hombres · lockers",
+   "zona": "Área negra · vestidores",
+   "nivel": 1,
+   "m2": 30.4,
+   "dims": "7.00 × 4.35",
+   "rect": [
+    0.3,
+    18.0,
+    7.0,
+    4.348
+   ],
+   "coleccion": "N1 · Área negra · vestidores"
+  },
+  {
+   "nodo": "Vestidor de quirófano · mujeres · lockers",
+   "nombre": "Vestidor de quirófano · mujeres · lockers",
+   "zona": "Área negra · vestidores",
+   "nivel": 1,
+   "m2": 30.4,
+   "dims": "7.00 × 4.35",
+   "rect": [
+    14.352,
+    18.0,
+    7.0,
+    4.348
+   ],
+   "coleccion": "N1 · Área negra · vestidores"
+  },
+  {
+   "nodo": "Vestíbulo de elevador",
+   "nombre": "Vestíbulo de elevador",
+   "zona": "Núcleo y escaleras",
+   "nivel": 1,
+   "m2": 16.6,
+   "dims": "3.20 × 5.20",
+   "rect": [
+    27.1,
+    17.15,
+    3.2,
+    5.202
+   ],
+   "coleccion": "N1 · Núcleo y escaleras"
+  },
+  {
+   "nodo": "Vestíbulo de elevador.001",
+   "nombre": "Vestíbulo de elevador",
+   "zona": "Núcleo y escaleras",
+   "nivel": 2,
+   "m2": 16.6,
+   "dims": "3.20 × 5.20",
+   "rect": [
+    27.1,
+    17.15,
+    3.2,
+    5.202
+   ],
+   "coleccion": "N2 · Núcleo y escaleras"
+  }
+ ]
+}
