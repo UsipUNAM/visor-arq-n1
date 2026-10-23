@@ -18,24 +18,46 @@ window.addEventListener('error', (e) => H.errores.push(String(e.message)));
 window.addEventListener('unhandledrejection', (e) => H.errores.push(String(e.reason)));
 
 // --- render --------------------------------------------------------------------------------------
-const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+// v14b: máxima calidad para computadora (Mac mini, PC, laptop): antialias, pixelRatio nativo y sombras
+function sinGL() {
+  $('sin-gl').hidden = false;
+  $('carga').hidden = true;
+}
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+} catch (e) {
+  sinGL();
+  throw e;
+}
+renderer.setPixelRatio(window.devicePixelRatio || 1);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.NeutralToneMapping;
 renderer.toneMappingExposure = 1.0;
 $('lienzo').appendChild(renderer.domElement);
 const lienzo = renderer.domElement;
+// si el navegador pierde el contexto gráfico (memoria de video insuficiente), aviso en lugar de cerrar la pestaña
+lienzo.addEventListener('webglcontextlost', (ev) => { ev.preventDefault(); H.contextoPerdido = true; sinGL(); }, false);
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xdfe5ea);
 const pmrem = new THREE.PMREMGenerator(renderer);
 scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-scene.environmentIntensity = 0.55;
-scene.add(new THREE.HemisphereLight(0xffffff, 0x8d877c, 1.25));
-const sol = new THREE.DirectionalLight(0xfff3e2, 1.5);
+scene.environmentIntensity = 0.40;
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8d877c, 0.85));
+const sol = new THREE.DirectionalLight(0xfff3e2, 2.6);
 sol.position.set(-30, 60, 40);
+sol.castShadow = true;
+sol.shadow.mapSize.set(4096, 4096);
+Object.assign(sol.shadow.camera, { left: -48, right: 48, top: 48, bottom: -48, near: 1, far: 220 });
+sol.shadow.camera.updateProjectionMatrix();
+sol.shadow.bias = -0.0004;
+sol.shadow.normalBias = 0.03;
 scene.add(sol);
+scene.add(sol.target);
 
 const persp = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.05, 3000);
 const orto = new THREE.OrthographicCamera(-30, 30, 20, -20, 0.1, 3000);
@@ -213,6 +235,13 @@ function instanciar() {
   return { grupos: n, mallas: quitadas };
 }
 H.instancias = instanciar();
+raiz.traverse((o) => {                                 // sombras: todo proyecta y recibe, salvo vidrios y transparentes
+  if (!o.isMesh) return;
+  const m = [].concat(o.material)[0];
+  o.castShadow = !(m && m.transparent);
+  o.receiveShadow = true;
+});
+renderer.shadowMap.needsUpdate = true;
 let llamadas = 0;
 raiz.traverse((o) => { if (o.isMesh) llamadas++; });
 H.llamadas = llamadas;
@@ -808,7 +837,8 @@ H.api = {
     return [r.left + (v.x + 1) / 2 * r.width, r.top + (1 - v.y) / 2 * r.height]; },
   tactil: () => TACTIL,
   joy: (x, y) => { joy.x = x; joy.y = y; },
-  info: () => ({ gpu: (() => { const g = renderer.getContext(); const e = g.getExtension('WEBGL_debug_renderer_info'); return e ? g.getParameter(e.UNMASKED_RENDERER_WEBGL) : '?'; })(),
+  sinGL,
+  info: () => ({ pixelRatio: renderer.getPixelRatio(), sombras: renderer.shadowMap.enabled, gpu: (() => { const g = renderer.getContext(); const e = g.getExtension('WEBGL_debug_renderer_info'); return e ? g.getParameter(e.UNMASKED_RENDERER_WEBGL) : '?'; })(),
     llamadas: H.llamadas, instancias: H.instancias, tris: renderer.info.render.triangles, calls: renderer.info.render.calls }),
   capas: () => Object.fromEntries(Object.entries(chk).map(([k, c]) => [k, c.checked])),
 };

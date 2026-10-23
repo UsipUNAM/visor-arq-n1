@@ -141,3 +141,7 @@ button, input, label, summary { -webkit-tap-highlight-color: transparent; }
 /* al caminar en pantalla táctil, solo la vista, la palanca y sus botones */
 body.caminando-tactil #panel, body.caminando-tactil #barra-notas, body.caminando-tactil #ficha,
 body.caminando-tactil #b-panel, body.caminando-tactil #mira { display: none !important; }
+#sin-gl { position: fixed; inset: 0; z-index: 20; background: var(--fondo); display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 10px; text-align: center; padding: 24px; }
+#sin-gl .marca { font-size: 30px; }
+#sin-gl p { font-size: 18px; color: var(--tinta); max-width: 30em; }
