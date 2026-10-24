@@ -46,6 +46,13 @@ vuelve a abrir un archivo de notas.
 En el visor, los modelos de mobiliario con licencia que no permite redistribuirlos se sustituyen automáticamente por su
 versión modelada a mano; el resto de los modelos y texturas son de dominio público (CC0).
 
+## Galería de renders realistas
+
+En el panel, la sección «Galería» trae 21 renders de Cycles (1920 × 1080, cámara a 1.60 m): una vista por zona importante
+de los dos niveles y la fachada sur de día y al atardecer (`galeria/`, JPG, 5.3 MB en total). Al hacer clic en un
+espacio que tenga render, la ficha muestra el botón «Ver render realista». En la vista grande: flechas ‹ › (o las del
+teclado) para pasar de una a otra y Esc o × para cerrar.
+
 ## Créditos
 
 v19 incorpora equipo médico y mobiliario de Sketchfab con licencia CC BY 4.0 (camas, ventilador, mesa puente, sillón,

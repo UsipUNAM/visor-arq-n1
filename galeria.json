@@ -1,0 +1,373 @@
+{
+ "nota": "Renders realistas de v19 (Cycles, 256 muestras, cámara a 1.60 m)",
+ "vistas": [
+  {
+   "clave": "lobby",
+   "titulo": "Lobby, recepción y vigilancia",
+   "zona": "Público",
+   "nivel": 1,
+   "imagen": "galeria/lobby.jpg",
+   "miniatura": "galeria/min/lobby.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Lobby"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Vestíbulo de elevador"
+    }
+   ]
+  },
+  {
+   "clave": "cafe",
+   "titulo": "Sala de café",
+   "zona": "Público",
+   "nivel": 1,
+   "imagen": "galeria/cafe.jpg",
+   "miniatura": "galeria/min/cafe.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Sala de café"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Tienda y cafetería"
+    }
+   ]
+  },
+  {
+   "clave": "auditorio",
+   "titulo": "Sala de usos múltiples (80 a 100 asistentes)",
+   "zona": "Público",
+   "nivel": 1,
+   "imagen": "galeria/auditorio.jpg",
+   "miniatura": "galeria/min/auditorio.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Sala de usos múltiples"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Antesala de la sala de usos múltiples"
+    }
+   ]
+  },
+  {
+   "clave": "macro_quirofano",
+   "titulo": "Macro quirófano · 8 mesas",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "imagen": "galeria/macro_quirofano.jpg",
+   "miniatura": "galeria/min/macro_quirofano.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Macro quirófano"
+    }
+   ]
+  },
+  {
+   "clave": "microcirugia",
+   "titulo": "Sala de microcirugía · 16 estaciones",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "imagen": "galeria/microcirugia.jpg",
+   "miniatura": "galeria/min/microcirugia.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Sala de microcirugía"
+    }
+   ]
+  },
+  {
+   "clave": "ceye",
+   "titulo": "CEYE · zona roja y zona azul",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "imagen": "galeria/ceye.jpg",
+   "miniatura": "galeria/min/ceye.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "CEYE"
+    }
+   ]
+  },
+  {
+   "clave": "cirugia_robotica",
+   "titulo": "Sala de cirugía robótica",
+   "zona": "Bloque quirúrgico",
+   "nivel": 1,
+   "imagen": "galeria/cirugia_robotica.jpg",
+   "miniatura": "galeria/min/cirugia_robotica.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Sala de cirugía robótica"
+    }
+   ]
+  },
+  {
+   "clave": "urgencias",
+   "titulo": "Urgencias adultos",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "imagen": "galeria/urgencias.jpg",
+   "miniatura": "galeria/min/urgencias.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Urgencias"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Sala de urgencias"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Debriefing de urgencias"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Control de enfermería de urgencias"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Debriefing de sala de urgencias"
+    }
+   ]
+  },
+  {
+   "clave": "trauma_choque",
+   "titulo": "Atención al politraumatizado (trauma choque)",
+   "zona": "Urgencias",
+   "nivel": 1,
+   "imagen": "galeria/trauma_choque.jpg",
+   "miniatura": "galeria/min/trauma_choque.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Atención al politraumatizado"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Control y debriefing de trauma"
+    }
+   ]
+  },
+  {
+   "clave": "anden_modelos",
+   "titulo": "Cadena de modelos biológicos · preparación de modelos",
+   "zona": "Cadena de modelos biológicos",
+   "nivel": 1,
+   "imagen": "galeria/anden_modelos.jpg",
+   "miniatura": "galeria/min/anden_modelos.jpg",
+   "espacios": [
+    {
+     "nivel": 1,
+     "prefijo": "Andén"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Preparación de cadáveres"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Recepción e inducción"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "RPBI"
+    }
+   ]
+  },
+  {
+   "clave": "consultorio_osce",
+   "titulo": "Consultorio OSCE",
+   "zona": "Consultorios OSCE",
+   "nivel": 2,
+   "imagen": "galeria/consultorio_osce.jpg",
+   "miniatura": "galeria/min/consultorio_osce.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Consultorio OSCE"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Sala de espera y aislamiento OSCE"
+    }
+   ]
+  },
+  {
+   "clave": "cabina_gesell",
+   "titulo": "Cabina Gesell (espejo hacia un consultorio OSCE)",
+   "zona": "Circulación Gesell",
+   "nivel": 2,
+   "imagen": "galeria/cabina_gesell.jpg",
+   "miniatura": "galeria/min/cabina_gesell.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Cabina Gesell"
+    },
+    {
+     "nivel": 1,
+     "prefijo": "Cabina Gesell"
+    }
+   ]
+  },
+  {
+   "clave": "hospitalizacion",
+   "titulo": "Hospitalización · adultos",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "imagen": "galeria/hospitalizacion.jpg",
+   "miniatura": "galeria/min/hospitalizacion.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Hospitalización"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Central de enfermería · bahía"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Cuarto de medicamentos simulado · hospitalización"
+    }
+   ]
+  },
+  {
+   "clave": "uci",
+   "titulo": "UCI adultos",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "imagen": "galeria/uci.jpg",
+   "miniatura": "galeria/min/uci.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "UCI"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Esclusa de acceso a UCI"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Central de enfermería UCI"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Cuarto de medicamentos simulado · UCI"
+    }
+   ]
+  },
+  {
+   "clave": "hemodinamia",
+   "titulo": "Hemodinamia simulada · simulador endovascular",
+   "zona": "Alta fidelidad",
+   "nivel": 2,
+   "imagen": "galeria/hemodinamia.jpg",
+   "miniatura": "galeria/min/hemodinamia.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Hemodinamia"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Control de hemodinamia"
+    }
+   ]
+  },
+  {
+   "clave": "cabinas_hapticas",
+   "titulo": "Cabinas de simulación háptica",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "imagen": "galeria/cabinas_hapticas.jpg",
+   "miniatura": "galeria/min/cabinas_hapticas.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Simulación háptica"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Debriefing de simulación háptica"
+    }
+   ]
+  },
+  {
+   "clave": "realidad_virtual",
+   "titulo": "Realidad virtual inmersiva · 3 estaciones",
+   "zona": "Realidad virtual",
+   "nivel": 2,
+   "imagen": "galeria/realidad_virtual.jpg",
+   "miniatura": "galeria/min/realidad_virtual.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Realidad virtual"
+    }
+   ]
+  },
+  {
+   "clave": "habilidades",
+   "titulo": "Habilidades 8 · sala grande de fidelidad intermedia",
+   "zona": "Salas de habilidades",
+   "nivel": 2,
+   "imagen": "galeria/habilidades.jpg",
+   "miniatura": "galeria/min/habilidades.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Habilidades"
+    }
+   ]
+  },
+  {
+   "clave": "oficinas",
+   "titulo": "Multioficinas y cubículos",
+   "zona": "Académico y oficinas",
+   "nivel": 2,
+   "imagen": "galeria/oficinas.jpg",
+   "miniatura": "galeria/min/oficinas.jpg",
+   "espacios": [
+    {
+     "nivel": 2,
+     "prefijo": "Multioficinas"
+    },
+    {
+     "nivel": 2,
+     "prefijo": "Coordinación y administración"
+    }
+   ]
+  },
+  {
+   "clave": "fachada_sur_dia",
+   "titulo": "Fachada sur y plaza de acceso · de día",
+   "zona": "Exterior",
+   "nivel": 0,
+   "imagen": "galeria/fachada_sur_dia.jpg",
+   "miniatura": "galeria/min/fachada_sur_dia.jpg",
+   "espacios": []
+  },
+  {
+   "clave": "fachada_sur_atardecer",
+   "titulo": "Fachada sur y plaza de acceso · al atardecer",
+   "zona": "Exterior",
+   "nivel": 0,
+   "imagen": "galeria/fachada_sur_atardecer.jpg",
+   "miniatura": "galeria/min/fachada_sur_atardecer.jpg",
+   "espacios": []
+  }
+ ]
+}

@@ -421,6 +421,7 @@ function seleccionar(e, objeto, ficha) {
   $('f-nombre').textContent = e.nombre;
   $('f-datos').textContent = `${e.m2.toFixed(1)} m²` + (e.dims ? ` · ${e.dims} m` : '');
   $('f-objeto').textContent = objeto ? `Objeto: ${limpio(objeto)}` + (ficha ? ` · ${ficha}` : '') : '';
+  botonRender(e);
   pintaNotas();
   pide();
 }
@@ -854,3 +855,56 @@ H.api = {
     llamadas: H.llamadas, instancias: H.instancias, tris: renderer.info.render.triangles, calls: renderer.info.render.calls }),
   capas: () => Object.fromEntries(Object.entries(chk).map(([k, c]) => [k, c.checked])),
 };
+
+
+// --- galería de renders realistas (v19b) --------------------------------------------------------------------------
+// galeria.json: una vista por zona (render de Cycles a 1920 × 1080) con los espacios que la abren desde la ficha.
+let galeria = [];
+let renderActual = -1;
+const renderDe = (e) => (e ? galeria.findIndex((g) => g.espacios.some((s) => s.nivel === e.nivel && e.nombre.startsWith(s.prefijo))) : -1);
+function botonRender(e) {
+  const i = renderDe(e);
+  $('b-render').hidden = i < 0;
+  $('b-render').dataset.i = i;
+}
+function abreRender(i) {
+  if (i < 0 || !galeria.length) return;
+  renderActual = (i + galeria.length) % galeria.length;
+  const g = galeria[renderActual];
+  $('cr-img').src = g.imagen;
+  $('cr-img').alt = g.titulo;
+  $('cr-titulo').textContent = g.titulo;
+  $('cr-zona').textContent = g.nivel ? `${g.zona} · Nivel ${g.nivel}` : g.zona;
+  $('caja-render').hidden = false;
+  if (H.modo === 'caminar' && document.pointerLockElement) document.exitPointerLock();
+}
+const cierraRender = () => { $('caja-render').hidden = true; renderActual = -1; };
+$('b-render').addEventListener('click', () => abreRender(+$('b-render').dataset.i));
+$('cr-cerrar').addEventListener('click', cierraRender);
+$('cr-ant').addEventListener('click', () => abreRender(renderActual - 1));
+$('cr-sig').addEventListener('click', () => abreRender(renderActual + 1));
+$('caja-render').addEventListener('click', (ev) => { if (ev.target.id === 'caja-render') cierraRender(); });
+document.addEventListener('keydown', (ev) => {
+  if ($('caja-render').hidden) return;
+  if (ev.code === 'Escape') cierraRender();
+  else if (ev.code === 'ArrowLeft') abreRender(renderActual - 1);
+  else if (ev.code === 'ArrowRight') abreRender(renderActual + 1);
+  else return;
+  ev.stopImmediatePropagation();
+  ev.preventDefault();
+}, true);
+fetch('galeria.json').then((r) => (r.ok ? r.json() : { vistas: [] })).then((d) => {
+  galeria = d.vistas || [];
+  const cont = $('galeria');
+  galeria.forEach((g, i) => {
+    const b = document.createElement('button');
+    b.className = 'g-item';
+    b.title = g.titulo;
+    b.innerHTML = `<img loading="lazy" src="${g.miniatura}" alt=""><span>${g.titulo.split(' · ')[0]}</span>`;
+    b.addEventListener('click', () => abreRender(i));
+    cont.appendChild(b);
+  });
+  H.galeria = galeria.length;
+  if (seleccion) botonRender(seleccion);
+}).catch(() => {});
+H.abreRender = abreRender;

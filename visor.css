@@ -149,3 +149,26 @@ body.caminando-tactil #b-panel, body.caminando-tactil #mira { display: none !imp
   justify-content: center; gap: 10px; text-align: center; padding: 24px; }
 #sin-gl .marca { font-size: 30px; }
 #sin-gl p { font-size: 18px; color: var(--tinta); max-width: 30em; }
+
+/* galería de renders realistas (v19b) */
+.galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.g-item { padding: 0; border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; background: #fff; cursor: pointer;
+  display: flex; flex-direction: column; text-align: left; }
+.g-item img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.g-item span { font-size: 11px; padding: 3px 6px 4px; color: var(--tinta); line-height: 1.25; }
+.g-item:hover { border-color: var(--acento); }
+.b-render { margin-top: 8px; width: 100%; padding: 8px; border: none; border-radius: 6px; background: var(--acento); color: #fff;
+  font-weight: 600; cursor: pointer; font-family: inherit; font-size: 13px; }
+#caja-render { position: fixed; inset: 0; z-index: 50; background: rgba(12, 14, 17, 0.92); display: flex; align-items: center;
+  justify-content: center; padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom)); }
+#caja-render figure { margin: 0; max-width: min(1920px, 100%); max-height: 100%; display: flex; flex-direction: column; }
+#cr-img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 4px; background: #222; }
+#caja-render figcaption { color: #e9ecef; padding: 10px 2px 0; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+#cr-zona { font-size: 12px; color: #c9a45c; text-transform: uppercase; letter-spacing: 0.06em; }
+#cr-titulo { font-size: 16px; }
+.cr-nota { font-size: 12px; color: #9aa3ab; }
+.cr-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; border: none; border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12); color: #fff; font-size: 34px; cursor: pointer; }
+#cr-ant { left: 12px; } #cr-sig { right: 12px; }
+#caja-render .x { position: absolute; top: max(12px, env(safe-area-inset-top)); right: 14px; background: rgba(255,255,255,0.12);
+  color: #fff; border: none; border-radius: 6px; width: 40px; height: 40px; font-size: 26px; cursor: pointer; }

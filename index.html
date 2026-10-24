@@ -60,6 +60,11 @@
     <div id="capas"></div>
   </section>
 
+  <section>
+    <h2>Galería <span class="valor">renders realistas</span></h2>
+    <div id="galeria" class="galeria"></div>
+  </section>
+
   <section class="ayuda">
     <b>Órbita</b>: arrastrar gira, clic derecho desplaza, rueda acerca.
     <b>Caminar</b>: W A S D, ratón para mirar, Shift corre, R/F sube o baja de nivel, Esc vuelve a órbita.
@@ -91,6 +96,7 @@
   <h3 id="f-nombre"></h3>
   <div class="datos" id="f-datos"></div>
   <div class="objeto" id="f-objeto"></div>
+  <button id="b-render" class="b-render" hidden>Ver render realista</button>
   <div class="auditoria">
     <h4>Observaciones de auditoría</h4>
     <ol id="f-notas"></ol>
@@ -106,6 +112,16 @@
   <button id="b-guardar">Guardar notas</button>
   <button id="b-cargar">Cargar notas…</button>
   <input id="archivo-notas" type="file" accept=".md,text/markdown,text/plain" hidden>
+</div>
+
+<div id="caja-render" hidden>
+  <figure>
+    <img id="cr-img" alt="">
+    <figcaption><span id="cr-zona"></span><b id="cr-titulo"></b><span class="cr-nota">Render realista · Cycles, cámara a 1.60 m</span></figcaption>
+  </figure>
+  <button id="cr-ant" class="cr-nav" aria-label="Anterior">‹</button>
+  <button id="cr-sig" class="cr-nav" aria-label="Siguiente">›</button>
+  <button id="cr-cerrar" class="x" aria-label="Cerrar">×</button>
 </div>
 
 <div id="mira" hidden></div>
