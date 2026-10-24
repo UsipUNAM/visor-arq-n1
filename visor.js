@@ -13,7 +13,11 @@ const CORTE_MAX = 12;       // valor del deslizador que equivale a «sin corte»
 const CORTE_N1 = 3.35, CORTE_N2 = Z2 + 3.35;
 
 const TACTIL = matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0 || /[?&]tactil=1/.test(location.search);
-const H = (window.HERMES = { cargadoMs: null, modo: 'orbita', errores: [], listo: false });
+// v17b: en teléfonos y tabletas se carga la versión para celular (texturas de 1024 px, partes_movil/), que cabe en su
+// memoria de video; ?calidad=alta fuerza la de computadora y ?movil=1 la de celular
+const MOVIL = !/[?&]calidad=alta/.test(location.search)
+  && (/[?&]movil=1/.test(location.search) || (TACTIL && Math.min(screen.width, screen.height) < 1100));
+const H = (window.HERMES = { cargadoMs: null, modo: 'orbita', errores: [], listo: false, movil: MOVIL });
 window.addEventListener('error', (e) => H.errores.push(String(e.message)));
 window.addEventListener('unhandledrejection', (e) => H.errores.push(String(e.reason)));
 
@@ -30,8 +34,8 @@ try {
   sinGL();
   throw e;
 }
-renderer.setPixelRatio(window.devicePixelRatio || 1);
-renderer.shadowMap.enabled = true;
+renderer.setPixelRatio(MOVIL ? Math.min(window.devicePixelRatio || 1, 2) : window.devicePixelRatio || 1);
+renderer.shadowMap.enabled = !MOVIL && !/[?&]sombras=0/.test(location.search);   // v17b: sin sombras en celular
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -51,7 +55,7 @@ scene.add(new THREE.HemisphereLight(0xffffff, 0x8d877c, 0.85));
 const sol = new THREE.DirectionalLight(0xfff3e2, 2.6);
 sol.position.set(-30, 60, 40);
 sol.castShadow = true;
-sol.shadow.mapSize.set(4096, 4096);
+sol.shadow.mapSize.set(MOVIL ? 2048 : 4096, MOVIL ? 2048 : 4096);
 Object.assign(sol.shadow.camera, { left: -48, right: 48, top: 48, bottom: -48, near: 1, far: 220 });
 sol.shadow.camera.updateProjectionMatrix();
 sol.shadow.bias = -0.0004;
@@ -114,16 +118,20 @@ function injerta(dst, src) {
   }
 }
 function cargaParte(p, avance) {
-  return new Promise((ok, mal) => loader.load(`partes/${p.archivo}`, ok, (ev) => avance(ev.loaded), mal));
+  return new Promise((ok, mal) => loader.load(`${DIR_PARTES}/${p.archivo}`, ok, (ev) => avance(ev.loaded), mal));
 }
 let datos, partes;
+let DIR_PARTES = MOVIL ? 'partes_movil' : 'partes';
 try {
-  [datos, partes] = await Promise.all([fetch('espacios.json').then((r) => r.json()), fetch('partes.json').then((r) => r.json())]);
+  if (MOVIL && !(await fetch('partes_movil.json', { method: 'HEAD' }).then((r) => r.ok).catch(() => false))) DIR_PARTES = 'partes';
+  [datos, partes] = await Promise.all([fetch('espacios.json').then((r) => r.json()), fetch(`${DIR_PARTES}.json`).then((r) => r.json())]);
 } catch (e) {
   clearInterval(relojCarga);
   $('carga-texto').textContent = 'No se pudo cargar el modelo: ' + e;
   throw e;
 }
+{ const m = /[?&]omite=([\d,]+)/.exec(location.search);              // depuración: ?omite=3,7 salta esas partes
+  if (m) { const om = m[1].split(',').map(Number); partes = partes.filter((_, i) => !om.includes(i)); } }
 const totalB = partes.reduce((s, p) => s + p.bytes, 0);
 const bajado = new Array(partes.length).fill(0);
 let listas = 0;
@@ -131,7 +139,8 @@ H.partes = { total: partes.length, cargadas: 0, mb: +(totalB / 1e6).toFixed(1) }
 function barra() {
   const f = Math.min(1, bajado.reduce((a, b) => a + b, 0) / totalB);
   $('carga-barra').style.width = `${(f * 100).toFixed(0)}%`;
-  $('carga-texto').textContent = `Cargando ${listas} de ${partes.length} partes · ${(f * totalB / 1e6).toFixed(1)} de ${(totalB / 1e6).toFixed(1)} MB`;
+  $('carga-texto').textContent = `Cargando ${listas} de ${partes.length} partes · ${(f * totalB / 1e6).toFixed(1)} de ${(totalB / 1e6).toFixed(1)} MB`
+    + (DIR_PARTES === 'partes_movil' ? ' · versión para celular' : '');
 }
 let primera = true;
 async function trabajador(cola) {
@@ -841,7 +850,7 @@ H.api = {
   tactil: () => TACTIL,
   joy: (x, y) => { joy.x = x; joy.y = y; },
   sinGL,
-  info: () => ({ pixelRatio: renderer.getPixelRatio(), sombras: renderer.shadowMap.enabled, gpu: (() => { const g = renderer.getContext(); const e = g.getExtension('WEBGL_debug_renderer_info'); return e ? g.getParameter(e.UNMASKED_RENDERER_WEBGL) : '?'; })(),
+  info: () => ({ mem: renderer.info.memory, programas: (renderer.info.programs || []).length, pixelRatio: renderer.getPixelRatio(), sombras: renderer.shadowMap.enabled, gpu: (() => { const g = renderer.getContext(); const e = g.getExtension('WEBGL_debug_renderer_info'); return e ? g.getParameter(e.UNMASKED_RENDERER_WEBGL) : '?'; })(),
     llamadas: H.llamadas, instancias: H.instancias, tris: renderer.info.render.triangles, calls: renderer.info.render.calls }),
   capas: () => Object.fromEntries(Object.entries(chk).map(([k, c]) => [k, c.checked])),
 };

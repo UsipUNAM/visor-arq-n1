@@ -2,8 +2,10 @@
 
 Visor web del modelo arquitectónico del hospital de simulación (planta baja y nivel 2 completos, amueblados y con su plan de evacuación), en máxima
 calidad para computadora de escritorio, laptop o Mac: texturas de 2048 px, sombras del sol, antialiasing y la resolución
-nativa de la pantalla. Probado en Chrome y Safari de escritorio. En tabletas y teléfonos puede quedarse sin memoria de
-video; en ese caso muestra «Este visor está optimizado para computadora; ábrelo en una PC o Mac».
+nativa de la pantalla. En teléfonos y tabletas carga sola una **versión para celular** (`partes_movil/`, 29 MB:
+texturas de 1024 px, sin biseles ni sombras, mallas simplificadas), con la misma barra de avance por partes. `?calidad=alta`
+fuerza la versión de computadora y `?movil=1` la de celular. Si el equipo se queda sin memoria de video, el visor muestra
+«Este visor está optimizado para computadora; ábrelo en una PC o Mac».
 
 ## Cómo abrirlo
 
