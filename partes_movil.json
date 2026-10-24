@@ -2,7 +2,7 @@
  {
   "archivo": "00_n1_estructura.glb",
   "nombre": "N1 · Estructura",
-  "bytes": 288040
+  "bytes": 278180
  },
  {
   "archivo": "01_nivel_1_general.glb",
@@ -42,7 +42,7 @@
  {
   "archivo": "08_n1_nucleo_y_escaleras.glb",
   "nombre": "N1 · Núcleo y escaleras",
-  "bytes": 1250224
+  "bytes": 1250044
  },
  {
   "archivo": "09_n1_puertas.glb",
@@ -52,7 +52,7 @@
  {
   "archivo": "10_n1_publico.glb",
   "nombre": "N1 · Público",
-  "bytes": 4523948
+  "bytes": 4530584
  },
  {
   "archivo": "11_n1_servicios_y_bodegas.glb",
@@ -72,7 +72,7 @@
  {
   "archivo": "14_n1_area_negra_vestidores.glb",
   "nombre": "N1 · Área negra · vestidores",
-  "bytes": 891564
+  "bytes": 891592
  },
  {
   "archivo": "15_n1_plafones.glb",
@@ -82,7 +82,7 @@
  {
   "archivo": "16_n2_estructura.glb",
   "nombre": "N2 · Estructura",
-  "bytes": 182308
+  "bytes": 173732
  },
  {
   "archivo": "17_nivel_2_general.glb",
@@ -127,7 +127,7 @@
  {
   "archivo": "25_n2_nucleo_y_escaleras.glb",
   "nombre": "N2 · Núcleo y escaleras",
-  "bytes": 1265388
+  "bytes": 1265440
  },
  {
   "archivo": "26_n2_puertas.glb",
@@ -172,6 +172,6 @@
  {
   "archivo": "34_exterior.glb",
   "nombre": "Exterior",
-  "bytes": 2201908
+  "bytes": 2221688
  }
 ]
