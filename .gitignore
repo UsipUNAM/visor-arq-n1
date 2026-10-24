@@ -1,0 +1,3 @@
+# secretos locales: nunca se publican
+.env
+.env.*
