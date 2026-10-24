@@ -2,176 +2,181 @@
  {
   "archivo": "00_n1_estructura.glb",
   "nombre": "N1 · Estructura",
-  "bytes": 278180
+  "bytes": 278200
  },
  {
   "archivo": "01_nivel_1_general.glb",
   "nombre": "Nivel 1 · general",
-  "bytes": 18176
+  "bytes": 18196
  },
  {
   "archivo": "02_n1_bloque_quirurgico.glb",
   "nombre": "N1 · Bloque quirúrgico",
-  "bytes": 621396
+  "bytes": 621416
  },
  {
   "archivo": "03_n1_cadena_de_modelos_biologicos.glb",
   "nombre": "N1 · Cadena de modelos biológicos",
-  "bytes": 315220
+  "bytes": 315240
  },
  {
   "archivo": "04_n1_centrales_de_enfermeria.glb",
   "nombre": "N1 · Centrales de enfermería",
-  "bytes": 365644
+  "bytes": 365664
  },
  {
   "archivo": "05_n1_circulaciones.glb",
   "nombre": "N1 · Circulaciones",
-  "bytes": 1038808
+  "bytes": 1038828
  },
  {
   "archivo": "06_n1_control_y_observacion.glb",
   "nombre": "N1 · Control y observación",
-  "bytes": 1328276
+  "bytes": 1328296
  },
  {
   "archivo": "07_n1_debriefing.glb",
   "nombre": "N1 · Debriefing",
-  "bytes": 1731456
+  "bytes": 1731476
  },
  {
   "archivo": "08_n1_nucleo_y_escaleras.glb",
   "nombre": "N1 · Núcleo y escaleras",
-  "bytes": 1250044
+  "bytes": 1249964
  },
  {
   "archivo": "09_n1_puertas.glb",
   "nombre": "N1 · Puertas",
-  "bytes": 940880
+  "bytes": 940900
  },
  {
   "archivo": "10_n1_publico.glb",
   "nombre": "N1 · Público",
-  "bytes": 4530584
+  "bytes": 4530604
  },
  {
   "archivo": "11_n1_servicios_y_bodegas.glb",
   "nombre": "N1 · Servicios y bodegas",
-  "bytes": 1514408
+  "bytes": 1514428
  },
  {
   "archivo": "12_n1_senalizacion_de_emergencia.glb",
   "nombre": "N1 · Señalización de emergencia",
-  "bytes": 85860
+  "bytes": 85880
  },
  {
   "archivo": "13_n1_urgencias.glb",
   "nombre": "N1 · Urgencias",
-  "bytes": 811356
+  "bytes": 811376
  },
  {
   "archivo": "14_n1_area_negra_vestidores.glb",
   "nombre": "N1 · Área negra · vestidores",
-  "bytes": 891592
+  "bytes": 891548
  },
  {
   "archivo": "15_n1_plafones.glb",
   "nombre": "N1 · Plafones",
-  "bytes": 434700
+  "bytes": 434720
  },
  {
   "archivo": "16_n2_estructura.glb",
   "nombre": "N2 · Estructura",
-  "bytes": 173732
+  "bytes": 174028
  },
  {
   "archivo": "17_nivel_2_general.glb",
   "nombre": "Nivel 2 · general",
-  "bytes": 9080
+  "bytes": 9100
  },
  {
   "archivo": "18_n2_academico_y_oficinas.glb",
   "nombre": "N2 · Académico y oficinas",
-  "bytes": 3862604
+  "bytes": 3862628
  },
  {
   "archivo": "19_n2_alta_fidelidad.glb",
   "nombre": "N2 · Alta fidelidad",
-  "bytes": 346720
+  "bytes": 346740
  },
  {
   "archivo": "20_n2_centrales_de_enfermeria.glb",
   "nombre": "N2 · Centrales de enfermería",
-  "bytes": 119676
+  "bytes": 119696
  },
  {
   "archivo": "21_n2_circulacion_gesell.glb",
   "nombre": "N2 · Circulación Gesell",
-  "bytes": 85556
+  "bytes": 85576
  },
  {
   "archivo": "22_n2_consultorios_osce.glb",
   "nombre": "N2 · Consultorios OSCE",
-  "bytes": 183396
+  "bytes": 183844
  },
  {
   "archivo": "23_n2_control_y_observacion.glb",
   "nombre": "N2 · Control y observación",
-  "bytes": 85532
+  "bytes": 85552
  },
  {
   "archivo": "24_n2_debriefing.glb",
   "nombre": "N2 · Debriefing",
-  "bytes": 319048
+  "bytes": 319072
  },
  {
-  "archivo": "25_n2_nucleo_y_escaleras.glb",
+  "archivo": "25_n2_escalera_exterior.glb",
+  "nombre": "N2 · Escalera exterior",
+  "bytes": 612976
+ },
+ {
+  "archivo": "26_n2_nucleo_y_escaleras.glb",
   "nombre": "N2 · Núcleo y escaleras",
-  "bytes": 1265440
+  "bytes": 1260712
  },
  {
-  "archivo": "26_n2_puertas.glb",
+  "archivo": "27_n2_puertas.glb",
   "nombre": "N2 · Puertas",
-  "bytes": 1129204
+  "bytes": 1134912
  },
  {
-  "archivo": "27_n2_realidad_virtual.glb",
+  "archivo": "28_n2_realidad_virtual.glb",
   "nombre": "N2 · Realidad virtual",
-  "bytes": 178484
+  "bytes": 178536
  },
  {
-  "archivo": "28_n2_salas_de_habilidades.glb",
+  "archivo": "29_n2_salas_de_habilidades.glb",
   "nombre": "N2 · Salas de habilidades",
-  "bytes": 1601492
+  "bytes": 1601508
  },
  {
-  "archivo": "29_n2_servicios_y_bodegas.glb",
+  "archivo": "30_n2_servicios_y_bodegas.glb",
   "nombre": "N2 · Servicios y bodegas",
-  "bytes": 323288
+  "bytes": 323348
  },
  {
-  "archivo": "30_n2_senalizacion_de_emergencia.glb",
+  "archivo": "31_n2_senalizacion_de_emergencia.glb",
   "nombre": "N2 · Señalización de emergencia",
-  "bytes": 97900
+  "bytes": 98348
  },
  {
-  "archivo": "31_n2_area_gris_y_transferencia.glb",
+  "archivo": "32_n2_area_gris_y_transferencia.glb",
   "nombre": "N2 · Área gris y transferencia",
-  "bytes": 35192
+  "bytes": 35268
  },
  {
-  "archivo": "32_n2_plafones.glb",
+  "archivo": "33_n2_plafones.glb",
   "nombre": "N2 · Plafones",
-  "bytes": 131784
+  "bytes": 131588
  },
  {
-  "archivo": "33_azotea.glb",
+  "archivo": "34_azotea.glb",
   "nombre": "Azotea",
-  "bytes": 603624
+  "bytes": 599420
  },
  {
-  "archivo": "34_exterior.glb",
+  "archivo": "35_exterior.glb",
   "nombre": "Exterior",
-  "bytes": 2221688
+  "bytes": 2221744
  }
 ]

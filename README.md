@@ -1,8 +1,8 @@
-# Visor 3D de los niveles 1 y 2 · modelo v17b
+# Visor 3D de los niveles 1 y 2 · modelo v18
 
 Visor web del modelo arquitectónico del hospital de simulación (planta baja y nivel 2 completos, amueblados y con su plan de evacuación), en máxima
 calidad para computadora de escritorio, laptop o Mac: texturas de 2048 px, sombras del sol, antialiasing y la resolución
-nativa de la pantalla. En teléfonos y tabletas carga sola una **versión para celular** (`partes_movil/`, 29 MB:
+nativa de la pantalla. En teléfonos y tabletas carga sola una **versión para celular** (`partes_movil/`, 29.5 MB:
 texturas de 1024 px, sin biseles ni sombras, mallas simplificadas), con la misma barra de avance por partes. `?calidad=alta`
 fuerza la versión de computadora y `?movil=1` la de celular. Si el equipo se queda sin memoria de video, el visor muestra
 «Este visor está optimizado para computadora; ábrelo en una PC o Mac».
@@ -16,7 +16,7 @@ fuerza la versión de computadora y `?movil=1` la de celular. Si el equipo se qu
   Abrir `index.html` directamente con doble clic **no** funciona: los navegadores no cargan modelos 3D desde archivos
   locales sin servidor.
 
-El modelo viene partido en 35 archivos por nivel y zona (`partes/`, 82.5 MB en total, el mayor de 10.6 MB). Se cargan en
+El modelo viene partido en 35 archivos por nivel y zona (`partes/`, 85 MB en total, el mayor de 10.6 MB). Se cargan en
 orden con una barra de avance y el edificio aparece en cuanto llegan los muros.
 
 ## Cómo se usa

@@ -1,8 +1,8 @@
 {
- "fuente": "hermes_v17b.blend",
+ "fuente": "hermes_v18.blend",
  "fecha": "2026-10-23",
  "px_textura": 1024,
- "mb": 28.9,
+ "mb": 29.5,
  "colecciones": [
   {
    "nombre": "Nivel 1",
@@ -156,6 +156,10 @@
     },
     {
      "nombre": "N2 · Señalización de emergencia",
+     "hijos": []
+    },
+    {
+     "nombre": "N2 · Escalera exterior",
      "hijos": []
     }
    ]
@@ -845,13 +849,13 @@
    "nombre": "Consultorio OSCE 10",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     6.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -860,13 +864,13 @@
    "nombre": "Consultorio OSCE 11",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     9.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -875,13 +879,13 @@
    "nombre": "Consultorio OSCE 12",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     12.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -890,13 +894,13 @@
    "nombre": "Consultorio OSCE 13",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     15.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -905,13 +909,13 @@
    "nombre": "Consultorio OSCE 14",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 15.6,
-   "dims": "3.05 × 5.10",
+   "m2": 15.1,
+   "dims": "3.05 × 4.95",
    "rect": [
     18.3,
-    1.5,
+    1.65,
     3.048,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -1010,13 +1014,13 @@
    "nombre": "Consultorio OSCE 8",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     0.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
@@ -1025,13 +1029,13 @@
    "nombre": "Consultorio OSCE 9",
    "zona": "Consultorios OSCE",
    "nivel": 2,
-   "m2": 14.5,
-   "dims": "2.85 × 5.10",
+   "m2": 14.1,
+   "dims": "2.85 × 4.95",
    "rect": [
     3.3,
-    1.5,
+    1.65,
     2.848,
-    5.1
+    4.95
    ],
    "coleccion": "N2 · Consultorios OSCE"
   },
